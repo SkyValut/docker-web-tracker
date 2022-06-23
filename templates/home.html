@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SKY WEBAPP</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body><center>
+   <h3>Tracking The END Face of URLs</h3>
+   <img src="{{ url_for('static', filename='sk.webp') }}" width="300" height="250">
+   <p>Have you ever wondered: Where does this link go? The sky Tool follows <br>
+    the path of the URL. It allows you to see the complete path a redirected<br>
+    URL goes through. It will show you the full redirection path of URLs, shortened
+    links, or tiny URLs.</p>
+<form action="/track" method="post">
+    <p>Enter URL</p><input type="url" name="user_url" placeholder="Enter URL">
+    <input type="submit" value="TRACK">
+    <button><a href="/helpline">HELPLINE</a></button>
+</form>
+</center>
+</body>
+</html>
